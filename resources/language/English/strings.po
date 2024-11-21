@@ -1,0 +1,24 @@
+# Kodi Media Center language file
+# Addon Name: librespot_connect
+msgid ""
+msgstr ""
+
+msgctxt "#30100"
+msgid "Configuration"
+msgstr ""
+
+msgctxt "#30101"
+msgid "Name"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Do not disturb Kodi"
+msgstr ""
+
+msgctxt "#30103"
+msgid "RTP port"
+msgstr ""
+
+msgctxt "#30104"
+msgid "Log info"
+msgstr ""

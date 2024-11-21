@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category  label="30100">
+    <setting label="30101" id="name"     type="text"   default="LibrespotConnect@{}" />
+    <setting label="30102" id="dnd_kodi" type="bool"   default="false"               />
+    <setting label="30103" id="rtp_port" type="number" default="45654"               />
+    <setting label="30104" id="loginfo"  type="bool"   default="false"               />
+  </category>
+</settings>
