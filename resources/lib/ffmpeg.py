@@ -29,4 +29,4 @@ class FFmpeg:
             stderr=subprocess.STDOUT,
             text=True,
         )
-        threading.Thread(target=utils.log_std, args=[ffmpeg.stdout]).start()
+        threading.Thread(target=lambda: utils.log_std(ffmpeg.stdout)).start()

@@ -31,6 +31,6 @@ class Librespot:
             stderr=subprocess.PIPE,
             text=True,
         )
-        threading.Thread(target=utils.log_std, args=[librespot.stderr]).start()
+        threading.Thread(target=lambda: utils.log_std(librespot.stderr)).start()
         self._ffmpeg.run(librespot.stdout)
         return librespot

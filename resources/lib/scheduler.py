@@ -3,6 +3,7 @@ import threading
 import librespot
 import utils
 
+
 class Scheduler:
     @utils.logged_method
     def __init__(self, onevent):
@@ -11,7 +12,6 @@ class Scheduler:
         self._max_failures = 5
         self._scheduler = self._schedule()
         self._process = None
-
 
     def _monitor(self):
         utils.log("Librespot started")
