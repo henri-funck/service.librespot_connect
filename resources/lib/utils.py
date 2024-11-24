@@ -1,4 +1,5 @@
 import os
+import subprocess
 import xbmc
 import xbmcaddon
 import xbmcgui
@@ -53,3 +54,12 @@ def notification(
     message="", heading=_ADDON_NAME, icon=_ADDON_ICON, sound=False, time=5000
 ):
     _DIALOG.notification(heading, message, icon, time, sound)
+
+
+def test_program(command):
+    try:
+        command = command.split()
+        subprocess.run(command, check=True)
+    except:
+        log(f"Deficient {command[0]}, aborting", True)
+        raise SystemExit()

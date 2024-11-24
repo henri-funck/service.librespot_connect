@@ -3,6 +3,8 @@ import threading
 
 import utils
 
+utils.test_program("ffmpeg -version")
+
 
 def get_file():
     return f"rtp://127.0.0.1:{utils.get_setting('rtp_port')}"

@@ -5,6 +5,8 @@ import threading
 import ffmpeg
 import utils
 
+utils.test_program("librespot --version")
+
 
 class Librespot:
     @utils.logged_method
