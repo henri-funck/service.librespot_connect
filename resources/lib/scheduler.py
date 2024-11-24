@@ -33,6 +33,7 @@ class Scheduler:
                 finally:
                     self._process.terminate()
                     self._process.wait()
+        utils.log("Too many errors, aborting", True)
         while True:
             yield
 
