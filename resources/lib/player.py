@@ -9,13 +9,10 @@ import spotify
 import utils
 
 
-def _get_player():
+def get_player():
     while True:
         with Player():
             yield
-
-
-PLAYER = _get_player()
 
 
 class Player(xbmc.Player):
