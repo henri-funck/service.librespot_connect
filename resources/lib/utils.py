@@ -12,6 +12,7 @@ _DIALOG = xbmcgui.Dialog()
 _SETTINGS = {
     "dnd_kodi": "false",
     "loginfo": "false",
+    "max_failures": "5",
     "name": "LibrespotConnect@{}",
     "rtp_port": "45654",
 }

@@ -9,7 +9,7 @@ class Scheduler:
     def __init__(self, onevent):
         self._librespot = librespot.Librespot(onevent)
         self._failures = 0
-        self._max_failures = 5
+        self._max_failures = int(utils.get_setting("max_failures"))
         self._scheduler = self._schedule()
         self._process = None
 
